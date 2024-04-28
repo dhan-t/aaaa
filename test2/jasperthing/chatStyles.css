@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 90vh;
+  background: #fff;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header h1 {
+  font-size: 3em;
+  color: #8a86ab;
+  position: relative;
+  margin: 30px;
+}
+
+#header-title {
+  font-size: 3rem;
+  color: #8a86ab;
+  position: relative;
+  margin: 30px;
+}
+
+.leftside {
+  height: 80vh;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftside .profileBtn {
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 100%;
+  background-color: #d2bbd5;
+
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bxs-user {
+  font-size: 2rem;
+  color: white;
+  margin: 22px 24px;
+}
+
+.leftside .micBtn {
+  height: 14rem;
+  width: 14rem;
+  border: none;
+  border-radius: 100%;
+  background-color: #d2bbd5;
+  cursor: pointer;
+}
+.bxs-microphone {
+  font-size: 5rem;
+  color: white;
+  align-self: baseline;
+}
+
+.form-box {
+  width: 49%;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-60%, -50%);
+
+  border-style: solid;
+  border-width: 10px;
+  border-color: #8a86ab;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chatarea {
+  width: 96%;
+  height: 85vh;
+
+  margin: 1rem;
+  margin-bottom: 4.2rem;
+  /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  flex-direction: column-reverse; /* Reverse order for new messages on top */
+  overflow-y: scroll; /* Enable scrolling */
+}
+
+.chatarea p {
+  font-size: 1.2rem;
+  color: #1e1e1e;
+}
+
+/* Individual Chat Bubble */
+.chat-bubble {
+  margin: 10px;
+
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* User Message Bubble */
+.user-message {
+  margin-left: 20%;
+  background-color: #ffcbcb;
+  border-radius: 15px 15px 0px 15px;
+  text-align: right;
+}
+
+/* AI Message Bubble */
+.ai-reply {
+  background-color: #d2bbd5;
+  max-width: 80%;
+  border-radius: 15px 15px 15px 0px;
+  text-align: left;
+}
+
+/* Message Text Content */
+.message-content {
+  word-wrap: break-word;
+  display: inline-block; /* Allow text and timestamp to align */
+}
+
+h2 {
+  position: absolute;
+  font-size: 3rem;
+  color: #8a86ab;
+  margin-bottom: 20rem;
+}
+
+.inputarea {
+  display: flex;
+  position: absolute;
+
+  margin: 1rem;
+  background-color: #d7d5ed;
+  border: none;
+  border-radius: 20px;
+}
+
+.typefield {
+  width: 40vw;
+  height: 3.2rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border-radius: 10rem;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+#send-button {
+  width: 5vw;
+  height: 3.2rem;
+  border: none;
+  border-radius: 20px;
+  background-color: #8a86ab;
+}
+.bx-play {
+  margin-left: 0.3rem;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
