@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfie.ai</title>
+    <link rel="stylesheet" href="chatStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <script type="text/javascript" src="https://unpkg.com/mic-recorder-to-mp3"></script>
+</head>
+
+<body>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai",
+            "assemblyai": "https://esm.run/assemblyai"
+          }
+        }
+      </script>
+    <header class="header">
+        <h1 id="header-title">Comfie.ai</h1>
+    </header>
+    <!-- for the user profile and microphone button. -->
+    <section class="leftside">
+        <a href="userPref.html" class="profileBtn"> <i class='bx bxs-user'></i></a>
+        <button class="micBtn"> <i class='bx bxs-microphone'></i></button>
+        <a href="" id="a"></a>
+    </section>
+    <!-- for the chatbot conversation -->
+    <div class="form-box">
+        <div class="chatarea">
+            <div class="chat-container" id="chat-history">
+            </div>
+        </div>
+        <div class="inputarea">
+            <input class="typefield" id="message-text" type="text" placeholder="Start typing...">
+            <button id="send-button"> <i class='bx bx-play'></i></button>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="main.js" type="module"></script>
+
+</html>
