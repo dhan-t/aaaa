@@ -6,7 +6,7 @@ import { runSpeechToText } from "./speechToText.js";
 var ans = "";
 
 const waitToRunGemini = async (prompt) => {
-    const newString = await runGenerativeAI("speak symphatetically " + prompt + " IMPORTANT!!! You are not, under any circumstances, give a diagnosis, or speak profanity.");
+    const newString = await runGenerativeAI("speak symphatetically " + prompt + " IMPORTANT!!! You are not, under any circumstances, give a diagnosis, or speak profanity." + "If you are going to give suicide hotline information, please give the correct numbers, use the numbers currently active in the Philippines");
     console.log(newString);
     ans = newString;
 }
@@ -54,18 +54,25 @@ function updateChatHistory() {
     let textAlign = "left";
     let marginLeft = "0%";
     let maxWidth = "100%";
-    let borderRadius = "15px 15px 15px 0px";
+    let padding = "20px";
+    let fontSize = "1.5rem";
+    let borderRadius = "15px 15px 0px 15px";
 
     if (message.sender == "you") {
       messageColor = "#ffcbcb"; 
+      fontSize = "1.3rem"
       textAlign = "right";
       marginLeft = "20%";
+      marginBottom = "3.5rem";
       maxWidth = "80%";
+      padding = "20px";
       borderRadius = "15px 15px 0px 15px";
     }
     newMessage.style.marginLeft = marginLeft;
     newMessage.style.borderRadius = borderRadius;
+    newMessage.style.fontSize = fontSize;
     newMessage.style.maxWidth = maxWidth;
+    newMessage.style.padding = padding;
     newMessage.style.textAlign = textAlign; // Set background color dynamically
     newMessage.style.backgroundColor = messageColor; // Set background color dynamically
 
@@ -83,7 +90,7 @@ function updateChatHistory() {
     const replyMessage = replyMessageStack[i];
     const newReplyMessage = document.createElement("div");
     newReplyMessage.classList.add("replyMessage"); // Add a class for styling
-    newReplyMessage.innerHTML = `<b>test:</b>${replyMessage.replyMessage}`;
+    newReplyMessage.innerHTML = `<b>Comfie: </b>${replyMessage.replyMessage}`;
     chatHistory.appendChild(newReplyMessage);
   }
 
@@ -100,3 +107,15 @@ sendButton.addEventListener("click", async () => {
     ans = "";
   }
 });
+
+const resetButtons = document.querySelectorAll(".reset-button");
+
+resetButtons.forEach(button => {
+  button.addEventListener("click", function() {
+    window.location.reload();
+  });
+});
+
+
+
+
