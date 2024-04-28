@@ -1,0 +1,31 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^0.8.0",
+    "assemblyai": "^4.4.1",
+    "dotenv": "^16.4.5",
+    "elevenlabs": "^0.4.0",
+    "elevenlabs-node": "^2.0.3",
+    "fs": "^0.0.1-security",
+    "playht": "^0.9.8"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}

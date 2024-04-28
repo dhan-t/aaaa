@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  font-size: 2rem;
+  color: #8a86ab;
+  position: relative;
+  margin: 30px;
+}
+
+.form-box {
+  width: 90%;
+  max-width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: #8a86ab;
+  border-radius: 2rem;
+  padding: 50px 60px 100px;
+  text-align: center;
+  box-shadow: 0 20px 100px #d7d5ed;
+  align-items: center;
+}
+.form-box h2 {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+  color: #8a86ab;
+  position: relative;
+}
+
+.form-box h3 {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #7e7e7e;
+  position: relative;
+}
+
+form input {
+  width: 92%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 12px 20px;
+  margin-bottom: 23px;
+  border-radius: 20px;
+  background: #d7d5ed;
+  font-size: 1.1rem;
+  color: #8a86ab;
+}
+
+button {
+  width: 92%;
+  height: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 23px;
+  padding: 10px 0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+
+  background: #8a86ab;
+}
+button:hover {
+  background: #8a86ab;
+}
+
+input:focus {
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.member {
+  font-size: 15px;
+  margin-top: 1.4rem;
+  color: #8a86ab;
+}
+.member a {
+  color: #89c6ff;
+  text-decoration: none;
+}

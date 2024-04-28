@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 90vh;
+  background: #fff;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  font-size: 2rem;
+  color: #8a86ab;
+  position: relative;
+  margin: 30px;
+}
+
+.leftside {
+  height: 80vh;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.leftside .exitBtn {
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 100%;
+  background-color: #d2bbd5;
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 65px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.bx-x {
+  margin: 24px 24px;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 25%;
+  min-height: 90vh;
+  top: 2%;
+  left: 20%;
+  text-align: left;
+  background-color: #8a86ab;
+  border: none;
+  border-radius: 30px;
+  align-items: left;
+  justify-content: left;
+  margin: 20px;
+}
+.maincontainer hr {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.fieldcontainer {
+  height: 45px;
+  width: 90%;
+  display: flex;
+  border: none;
+  border-radius: 15px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  background-color: white;
+  align-items: center;
+}
+.prefname {
+  width: 90%;
+  font-size: 1rem;
+  color: #8a86ab;
+}
+.prefBtn {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+}
+.bxs-edit-alt {
+  color: #8a86ab;
+  font-size: 1.3rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.connecttext {
+  width: 90%;
+  font-size: 1rem;
+  color: #8a86ab;
+}
+.openlinkbtn {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.bx-link-external {
+  color: #8a86ab;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  justify-items: left;
+}
+
+.prefbtn {
+  background-color: #fff;
+  color: #8a86ab;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 10px;
+  justify-content: left;
+}
+hr {
+  height: 3px;
+  border-width: 0;
+  background-color: #fff;
+}
+.conpepBtn {
+  background-color: #fff;
+  color: #8a86ab;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.conprofBtn {
+  background-color: #fff;
+  color: #8a86ab;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 10px;
+}
