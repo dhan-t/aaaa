@@ -2,7 +2,7 @@ GROUP - GW
 
 ---
 
-# Login-Register Website Project
+# Comfie - Comforting Companion
 
 ## Setup Guide
 1. **Database Setup**: 
